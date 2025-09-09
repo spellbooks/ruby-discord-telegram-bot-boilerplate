@@ -5,13 +5,7 @@ Perfect starting point if you want a clean structure, environment setup, and tes
 
 ## Structure
 
-├── app/ # Bot logic (Discord, Telegram, controllers)
-├── bin/ # Executable entry point scripts
-├── config/ # Configuration, including example .env
-├── spec/ # RSpec test suite
-├── Gemfile # Project dependencies
-├── Rakefile # Build/test/automation tasks
-├── .rubocop.yml # Code linting rules
+<pre> ```text ├── app/ # Bot logic (Discord, Telegram, controllers) ├── bin/ # Executable entry point scripts ├── config/ # Configuration, including example .env ├── spec/ # RSpec test suite ├── Gemfile # Project dependencies ├── Rakefile # Build/test/automation tasks ├── .rubocop.yml # Code linting rules ``` </pre>
 
 ## Setup
 
