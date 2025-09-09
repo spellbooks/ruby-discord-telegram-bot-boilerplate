@@ -15,6 +15,7 @@ GEM
     discordrb-webhooks (3.5.0)
       rest-client (>= 2.0.0)
     domain_name (0.6.20240107)
+    dotenv (3.1.8)
     dry-core (1.1.0)
       concurrent-ruby (~> 1.0)
       logger
@@ -132,6 +133,7 @@ PLATFORMS
 
 DEPENDENCIES
   discordrb (= 3.5.0)
+  dotenv (= 3.1.8)
   logger (= 1.7.0)
   rake (= 13.0.0)
   rspec (= 3.9.0)
