@@ -46,6 +46,24 @@ Edit .env and set your credentials:
 
 `SERVER_ID_DISCORD` (optional, for Discord dev testing)
 
+#### 5. Run Bot
+
+```
+./bin/START
+```
+
+#### 6. Single Run Bot
+
+```
+rake discord
+```
+
+or
+
+```
+rake telegram
+```
+
 ## Unit Test
 
 RSpec is preconfigured in the spec/ directory. Run tests with:
