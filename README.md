@@ -79,7 +79,3 @@ bundle exec rspec
 | Quick start        | Ready-to-use project structure with `.env` setup |
 | Modular & testable | Commands separated, testable with RSpec          |
 | Scalable           | Easy to add new commands and integrations        |
-
-## License
-
-MIT License — feel free to use, modify, and redistribute.

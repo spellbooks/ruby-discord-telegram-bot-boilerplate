@@ -49,9 +49,13 @@ begin
   # /Ping command
   bot.application_command(:ping) do |event|
     start_time = Time.now
-    response = event.respond(content: Ping.say)
+    event.defer
+
     latency = Ping.calculate_latency(start_time)
-    response.edit_response(content: Ping.with_latency(latency))
+    
+    event.edit_response(content: Ping.with_latency(latency))
+  rescue StandardError => e
+    event.respond(content: "Error calculating ping: #{e.message}")
   end
 
   bot.run
