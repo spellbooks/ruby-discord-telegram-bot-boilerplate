@@ -3,42 +3,45 @@
 A boilerplate project for running Discord and Telegram bots together in a single Ruby application.
 Perfect starting point if you want a clean structure, environment setup, and testing out of the box.
 
+## Prerequisites
+
+- Ruby 3.0^
+
+## Installation
+
+```
+gem install sylvia
+```
+
+then
+
+```
+sylvia bot new_app
+```
+
 ## Structure
 
 <pre>
-├── app/ # Bot logic (Discord, Telegram, controllers)
-├── bin/ # Executable entry point scripts
-├── config/ # Configuration, including example .env
-├── spec/ # RSpec test suite
-├── Gemfile # Project dependencies
-├── Rakefile # Build/test/automation tasks
-├── .rubocop.yml # Code linting rules
+├── app/        # Bot logic (Discord, Telegram, controllers, model?)
+├── bin/        # Executable entry point scripts
+├── config/     # Configuration, including example .env
+├── spec/       # RSpec test suite
+├── Gemfile     # Project dependencies
+├── Rakefile    # Build/test/automation tasks
+├── .rubocop.yml    # Code linting rules
 </pre>
 
-## Setup
+## Setup and Configuration
 
-#### 1. Clone the repo
-
-```
-git clone https://github.com/spellbooks/ruby-discord-telegram-bot-boilerplate.git
-cd ruby-discord-telegram-bot-boilerplate
-```
-
-#### 2. Install dependencies
+#### Install dependencies
 
 ```
 bundle install
 ```
 
-#### 3. Copy .env file
+#### Configure environment variables
 
-```
-cp config/.env.example .env
-```
-
-#### 4. Configure environment variables
-
-Edit .env and set your credentials:
+Edit `config/.env` and set your credentials:
 
 `TOKEN_DISCORD`, `CLIENT_ID_DISCORD`
 
@@ -66,16 +69,16 @@ rake telegram
 
 ## Unit Test
 
-RSpec is preconfigured in the spec/ directory. Run tests with:
-
 ```
-bundle exec rspec
+rake test
 ```
 
-## Summary
+## License
 
-| Purpose            | Details                                          |
-| ------------------ | ------------------------------------------------ |
-| Quick start        | Ready-to-use project structure with `.env` setup |
-| Modular & testable | Commands separated, testable with RSpec          |
-| Scalable           | Easy to add new commands and integrations        |
+MIT License
+
+#### Credits
+
+Created by `whdzera`
+
+Feel free to fork, improve, or contribute via pull requests!
